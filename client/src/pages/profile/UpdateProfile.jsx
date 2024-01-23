@@ -20,7 +20,6 @@ const UpdateProfile = () => {
   const [isProgress, setIsProgress] = useState(false);
 
   console.log(currentUser._id);
-
   useEffect(() => {
     if (image) {
       handleFileUpload(image);
