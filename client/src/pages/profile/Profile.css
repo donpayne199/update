@@ -1,0 +1,68 @@
+.close-profile-page {
+  display: block;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: right;
+  margin-right: 1rem;
+  margin-bottom: 0.6rem;
+}
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: solid rgba(255, 255, 255, 0.4);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  padding: 5vh 0;
+}
+
+.profile-pic-and-school-container {
+  width: 13vw;
+  padding: 1rem 0;
+  border: solid #373a36 2px;
+  border-radius: 8px;
+  text-align: center;
+}
+.the-profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.school {
+  text-transform: capitalize;
+}
+.classOf {
+  text-transform: capitalize;
+}
+.profile-info-btns {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.profile-info-btn {
+  margin: 0.6rem auto;
+  border: solid 1px var(--gray);
+  width: 13vw;
+  padding: 0.5rem 0;
+  border: solid #373a36 2px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profile-update {
+  color: brown;
+  border: solid brown 2px;
+}
+
+.form-background {
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-image: radial-gradient(black, black);
+}

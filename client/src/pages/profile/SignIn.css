@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin: 0 15px; */
+}
+
+.sign-in {
+  margin-bottom: 36px;
+}
+
+.login-inputs {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #f2f2f2 2px;
+  border-bottom: solid #f2f2f2 2px;
+  font-family: var(--body-font);
+  width: 16rem;
+  font-size: 18px;
+  line-height: 220%;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+
+.show-error {
+  height: 14px;
+  margin-top: -14px;
+}
+
+.login-btn {
+  color: brown;
+  width: 16rem;
+  background: transparent;
+  font-size: 20px;
+  padding: 10px;
+  border: solid #f2f2f2 2px;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
