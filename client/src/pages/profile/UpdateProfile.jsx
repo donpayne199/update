@@ -14,8 +14,6 @@ const UpdateProfile = () => {
   const [imagePercent, setImagePercent] = useState(0);
   const [imageError, setImageError] = useState(false);
   const [formData, setFormData] = useState({});
-  const [openTextArea, setOpenTextArea] = useState(false);
-  const [hideCloseBtn, setHideCloseBtn] = useState(true);
   const [updateSuccess, setUpdateSuccess] = useState(false);
   const { currentUser, loading, error } = useSelector((state) => state.user);
 
