@@ -9,26 +9,26 @@ const Navbar = () => {
       <div className="navbar" style={currentUser ? { background: "#ccffff" } : { background: "lightgray" }}>
         <h1>Logo</h1>
         <div className="btn-set">
-          <Link to="profile">
-            {currentUser ? (
-              <div className="profile-favorites-btn-set">
+          {currentUser ? (
+            <div className="profile-favorites-btn-set">
+              <Link to="profile">
                 <img src={currentUser.profilePic} alt="profile picture" className="profile-pic" style={{ borderColor: currentUser.profileBtnBorder }} />
-              </div>
-            ) : (
-              <>
-                <Link to="/sign-in">
-                  <button className="sign-in-btn btn-set" style={currentUser ? { backgroundColor: currentUser.signInBtns } : { backgroundColor: "lightgray", borderColor: "darkgray" }}>
-                    Sign in
-                  </button>
-                </Link>
-                <Link to="/sign-up">
-                  <button className="sign-up btn-set" style={currentUser ? { backgroundColor: currentUser.signInBtns } : { backgroundColor: "lightgray", borderColor: "darkgray" }}>
-                    Sign up
-                  </button>
-                </Link>
-              </>
-            )}
-          </Link>
+              </Link>
+            </div>
+          ) : (
+            <>
+              <Link to="/sign-in">
+                <button className="sign-in-btn btn-set" style={currentUser ? { backgroundColor: currentUser.signInBtns } : { backgroundColor: "lightgray", borderColor: "darkgray" }}>
+                  Sign in
+                </button>
+              </Link>
+              <Link to="/sign-up">
+                <button className="sign-up btn-set" style={currentUser ? { backgroundColor: currentUser.signInBtns } : { backgroundColor: "lightgray", borderColor: "darkgray" }}>
+                  Sign up
+                </button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>

@@ -23,7 +23,7 @@ app.listen(3022, () => {
   console.log("Server listening on port 3022!");
 });
 
-// app.use("/api/user", userRoutes);
+app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
 
 // Error handler
